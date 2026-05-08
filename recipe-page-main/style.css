@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%) ;
+}
+
+.card {
+  margin: 100px auto;
+  border-radius: 10px;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 100%);
+  width: 55%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.card-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  justify-content: auto;
+  border-radius: 30px;
+  padding: 20px;
+    
+}   
+
+.card-title {
+    font-family: 'young-seriff';
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 22px;
+  padding-bottom: 40px;
+}
+
+.explanation {
+    font-family: 'outfit';
+    color: hsl(30, 10%, 34%) ;
+  font-size: 1.2rem;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+
+.preparation-title {
+  font-family: 'outfit';
+  color: hsl(332, 51%, 32%) ;
+  font-size: 1.2rem;
+  justify-content: center;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.preparation-list {
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+  font-size: 1rem;
+  justify-content: center;
+  padding-left: 67px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-family: 'young-seriff';
+  color: hsl(332, 51%, 32%) ;
+  font-size: 1.7rem;
+  justify-content: center;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+
+.ingredients-list {
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+  font-size: 1rem;
+  justify-content: center;
+  padding-left: 67px;
+  padding-bottom: 40px;
+}
+
+
+.instructions-list {
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+  font-size: 1rem;
+  justify-content: center;
+  padding-left: 67px;
+  padding-bottom: 40px;
+}
+
+p {
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+  font-size: 1rem;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+
+.nutrition-list {
+  font-family: 'outfit';
+  color: hsl(24, 5%, 18%);
+  font-size: 1rem;
+  justify-content: center;
+  padding-left: 67px;
+  padding-bottom: 40px;
+}
+
