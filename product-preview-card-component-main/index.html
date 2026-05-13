@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Preview Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            serif: ['Fraunces', 'serif'],
+          },
+          colors: {
+            'dark-cyan': '#3d8168',
+            'dark-cyan-hover': '#1a4032',
+            'cream': '#f2ebe3',
+            'dark-grayish-blue': '#6c7289',
+            'very-dark-blue': '#1c232b',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-cream font-sans flex items-center justify-center p-6">
+
+  <div class="bg-white rounded-xl overflow-hidden flex flex-col md:flex-row max-w-[600px] w-full">
+
+    <!-- Imagem do produto -->
+    <div class="md:w-1/2">
+  <img
+    src="./images/image-product-mobile.jpg"
+    srcset="./images/image-product-desktop.jpg"
+    sizes="(min-width: 768px) 300px, 100vw"
+    alt="Gabrielle Essence Eau De Parfum"
+    class="w-full h-full object-cover"
+  />
+</div>
+
+
+    <!-- Conteúdo -->
+    <div class="md:w-1/2 p-8 flex flex-col justify-between gap-5">
+
+      <!-- Categoria -->
+      <p class="text-[11px] tracking-[5px] uppercase text-dark-grayish-blue font-medium">
+        Perfume
+      </p>
+
+      <!-- Nome do produto -->
+      <h1 class="font-serif text-[2rem] leading-none text-very-dark-blue">
+        Gabrielle Essence Eau De Parfum
+      </h1>
+
+      <!-- Descrição -->
+      <p class="text-sm text-dark-grayish-blue leading-relaxed">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <!-- Preços -->
+      <div class="flex items-center gap-5">
+        <span class="font-serif text-[2rem] text-dark-cyan">$149.99</span>
+        <span class="text-sm text-dark-grayish-blue line-through">$169.99</span>
+      </div>
+
+      <!-- Botão -->
+      <button
+        class="bg-dark-cyan hover:bg-dark-cyan-hover transition-colors text-white font-bold text-sm rounded-lg py-3.5 px-6 flex items-center justify-center gap-2.5"
+      >
+        <!-- Ícone de carrinho -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" aria-hidden="true">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M6.024 1.5l-.084.044-.044.044C5.11 2.354 4.803 3.16 4.803 4a.24.24 0 01-.24.24H1.5a.24.24 0 00-.24.24v8.28c0 .132.108.24.24.24h12a.24.24 0 00.24-.24V4.48a.24.24 0 00-.24-.24h-3.06a.24.24 0 01-.24-.24c0-.84-.306-1.645-1.093-2.412l-.044-.044L9.019 1.5a3.742 3.742 0 00-2.995 0z"
+            fill="white"
+          />
+        </svg>
+        Add to Cart
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>
